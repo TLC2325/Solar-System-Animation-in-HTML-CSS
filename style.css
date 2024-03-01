@@ -75,7 +75,9 @@ body {
     right: 2.8em;
     width: 3em;
     height: 3em;
-    background-color: aqua;
+    /* background-color: aqua; */
+    background: url('earth.png');
+    background-size: cover;
 }
 
 .wrapper .moon::before {
