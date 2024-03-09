@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg');
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    height: 40em;
+    width: 40em;
+    /* font-size: 10px; */
+}
+
+.sun {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(255, 81, 0);
+    box-shadow: 0 0 75px rgba(255, 141, 0, 1);
+    top: 15em;
+    left: 15em;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+
+.earth,
+.moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.earth {
+    top: 7em;
+    left: 7em;
+    width: 30em;
+    height: 30em;
+    animation: anim 36.5s linear infinite;
+}
+
+.moon {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: anim 4s linear infinite;
+}
+
+@keyframes anim {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.earth::before,
+.moon::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.wrapper .earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    /* background-color: aqua; */
+    background: url('earth.png');
+    background-size: cover;
+}
+
+.wrapper .moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+
+/* * {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg');
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    height: 40em;
+    width: 40em;
+}
+
+.sun {
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    background-color: rgb(255, 81, 0);
+    box-shadow: 0 0 75px rgba(255, 141, 0, 1);
+    top: 15em;
+    left: 15em;
+    border-radius: 50%;
+
+}
+
+.earth,
+.moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.earth {
+    width: 30em;
+    height: 30em;
+    top: 5em;
+    left: 5em;
+    animation: anim 30.5s linear infinite;
+}
+
+.moon {
+    width: 3em;
+    height: 3em;
+    top: 0;
+    left: 0;
+    animation: anim 2.7s linear infinite;
+}
+
+@keyframes anim {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.earth::before,
+.moon::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background: url('earth.png');
+    background-size: cover;
+}
+
+.moon::before {
+    background: url('https://www.freeiconspng.com/thumbs/moon-png/moon-png-no-background-15.png');
+    background-size: cover;
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+} */
+
+/* 
+.sun {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background-color: rgb(255, 81, 0);
+    box-shadow: 0 0 75px rgba(255, 141, 0, 1);
+    position: absolute;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg');
+}
+
+.mercury {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/b/b9/3D_Mercury.png');
+    background-size: cover;
+    position: relative;
+}
+
+.earth {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: url('earth.png');
+    background-size: cover;
+    position: relative;
+    animation: earth-orbit 10s linear infinite;
+}
+
+
+.earth:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: url('https://www.freeiconspng.com/thumbs/moon-png/moon-png-no-background-15.png');
+    background-size: cover;
+    animation: moon-orbit 2.5s linear infinite;
+}
+
+
+@keyframes earth-orbit {
+    from {
+        transform: rotate(0deg) translateX(320px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(320px) rotate(-360deg);
+    }
+}
+
+@keyframes moon-orbit {
+    from {
+        transform: rotate(0deg) translateX(40px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+} */
