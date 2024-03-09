@@ -14,11 +14,11 @@ The Solar System Animation project is about diving into the world of web develop
 - **Animating Elements**: Using CSS animations to add interest to the web pages with cool effects like rotation and pulsing.
 
 ### Helpful Resources
-(https://www.youtube.com/watch?v=pQN-pnXPaVg
-https://www.youtube.com/watch?v=_xug0Qw-P_Q
-https://www.w3schools.com/html/html_intro.asp
-https://www.w3schools.com/css/
-https://github.com/Tivotal/Solar-System-Animation-in-HTML-and-CSS)
+- https://www.youtube.com/watch?v=pQN-pnXPaVg
+- https://www.youtube.com/watch?v=_xug0Qw-P_Q
+- https://www.w3schools.com/html/html_intro.asp
+- https://www.w3schools.com/css/
+- https://github.com/Tivotal/Solar-System-Animation-in-HTML-and-CSS
 
 <hr>
 Feel free to contributions to the Solar System Animation project. Whether you're a beginner or an experienced developer, you can contribute by fixing bugs, adding new features, or providing feedback. 
