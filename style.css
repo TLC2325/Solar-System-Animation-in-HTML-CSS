@@ -152,8 +152,11 @@ body {
 .mars {
     position: absolute;
     width: 40em;
-    height: 40em;
+    height: 30em;
+    top: 5em;
     border-radius: 50%;
+    /* background-color: aqua;
+    opacity: 30%; */
     animation: orbit 20s linear infinite;
 }
 
@@ -163,14 +166,16 @@ body {
     background: url("https://www.pngall.com/wp-content/uploads/13/Mars-PNG-Picture.png");
     background-size: cover;
     bottom: 4em;
-    left: 2em;
+    right: 2em;
 }
 
 .jupiter {
     position: absolute;
     border-radius: 50%;
-    width: 46em;
-    height: 46em;
+    width: 45em;
+    height: 30em;
+    top: 5em;
+    left: -3em;
     animation: orbit 45s linear infinite;
 }
 
@@ -179,16 +184,14 @@ body {
     height: 4em;
     background: url("https://png.pngtree.com/png-clipart/20220705/ourmid/pngtree-jupiter-planet-png-png-image_5683845.png");
     background-size: cover;
-    bottom: -2em;
-    left: 50em;
 }
 
 .saturn {
     position: absolute;
-    width: 60em;
-    height: 60em;
-    top: -10em;
-    left: -8em;
+    width: 50em;
+    height: 38em;
+    top: 2em;
+    left: -4em;
     border-radius: 50%;
     animation: orbit 48s linear infinite;
 }
@@ -196,20 +199,20 @@ body {
 .saturn::before {
     content: "";
     position: absolute;
-    width:4.8em;
+    width: 4.8em;
     height: 3.1em;
     background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Saturnx.png/1200px-Saturnx.png");
     background-size: contain;
-    top: 4em;
-    left: 4em;
+    top: -4em;
+    right: 4em;
     animation: orbit 36.5s linear infinite;
 }
 
 .uranus {
     position: absolute;
     width: 65em;
-    height: 65em;
-    top: -12em;
+    height: 38em;
+    top: 2em;
     left: -12em;
     border-radius: 50%;
     animation: orbit 70s linear infinite;
@@ -221,18 +224,17 @@ body {
     background: url("https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xMl9waG90b19vZl91cmFudXNfcGxhbmV0X2lzb2xhdGVkX29uX3doaXRlX2JhY19lOWUzYWM3NS1kMmUyLTQ1ODctYmI5MC1mZGUxMWI2NTNiYTEucG5n.png");
     background-size: cover;
     animation: orbit 10s linear infinite;
-    top: -13em;
-    left: 22em;
+    bottom: 1em;
 }
 
 .neptune {
     position: absolute;
-    width: 80em;
-    height: 80em;
-    top: -18em;
-    left: -18em;
+    width: 75em;
+    height: 36em;
+    top: 3em;
+    left: -20em;
     border-radius: 50%;
-    animation: orbit 80s linear infinite;
+    animation: orbit 60s linear infinite;
 }
 
 .neptune::before {
@@ -242,5 +244,5 @@ body {
     background-size: cover;
     border-radius: 50%;
     right: 2em;
-    bottom: 1em;
+    bottom: 8em;
 }
